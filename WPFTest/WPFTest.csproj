@@ -56,13 +56,14 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="AppViewModel.cs" />
+    <Compile Include="Models\ActiveOrders.cs" />
     <Compile Include="Models\PendingOrders.cs" />
     <Compile Include="Utilities\ObservableObject.cs" />
     <Compile Include="Utilities\RelayCommand.cs" />
     <Compile Include="ViewModels\ActiveViewModel.cs" />
     <Compile Include="ViewModels\OrderViewModel.cs" />
     <Compile Include="ViewModels\PendingViewModel.cs" />
-    <Compile Include="ViewModels\SummaryReportsViewModelClass1.cs" />
+    <Compile Include="ViewModels\SummaryReportsViewModel.cs" />
     <Compile Include="Views\ActiveView.xaml.cs">
       <DependentUpon>ActiveView.xaml</DependentUpon>
     </Compile>
@@ -130,6 +131,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Services\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
